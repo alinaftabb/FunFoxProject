@@ -1,0 +1,172 @@
+/* Base Styles */
+.week2-main {
+  margin: 20px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #1e242f;
+  height: 93%;
+}
+
+.one2 {
+  font-size: 28px;
+}
+
+.three2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+.box {
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  width: 235px;
+  height: 168px;
+  border-radius: 10px 0px 0px 0px;
+  border: 3px dashed #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame img {
+  width: 171px;
+}
+
+.text {
+  line-height: 24.63px;
+}
+
+.icon {
+  height: 34px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.four2 {
+  line-height: 29px;
+  font-size: 18px;
+}
+
+.answer {
+  color: #b6b6b6;
+  padding: 10px;
+  border: 4px dashed #cccccc;
+  border-radius: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+}
+
+.hint {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.five2 {
+  background-color: #25a3a1;
+  font-size: 22px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  border: 4px dashed #a4fdfb;
+}
+
+.five2 p {
+  margin: 0px;
+}
+
+.six2 {
+  font-size: 20px;
+  line-height: 24.63px;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+/* Laptop Media Queries */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .week2-main {
+    font-size: 18px;
+  }
+
+  .one2 {
+    font-size: 26px;
+  }
+
+  .three2 .box {
+    width: 250px;
+  }
+
+  .three2 .frame {
+    width: 200px;
+  }
+
+  .four2 {
+    font-size: 16px;
+  }
+
+  .answer {
+    padding: 8px;
+    border-radius: 15px;
+  }
+
+  .five2 p {
+    font-size: 18px;
+  }
+  .six2 {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Media Queries */
+@media (max-width: 767px) {
+  .week2-main {
+    font-size: 16px;
+    flex-direction: column-reverse;
+  }
+
+  .one2,
+  .four2,
+  .six2 {
+    font-size: 14px;
+  }
+
+  .three2 {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .question {
+    flex-direction: column;
+  }
+
+  .hint {
+    width: 100%;
+  }
+
+  .five2 p {
+    font-size: 16px;
+  }
+}
